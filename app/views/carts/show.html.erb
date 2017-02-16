@@ -1,13 +1,13 @@
 <section class="cart-show">
 
   <header class="page-header">
-    <h1>My Cart</h1>
+    <h1 align="center">My Cart</h1>
   </header>
 
   <% if cart.count == 0 %>
-    <h2>Cart Empty</h2>
-    <p>Add Some Products</p>
-    <p><%= link_to 'Products', [:products], class: 'btn btn-info' %>
+    <h2 align="center">Cart Empty</h2>
+    <br><h4 align="center">Add Some Products</h4>
+    <br><p align ="center"><%= link_to 'Products', [:products], class: 'btn btn-info' %>
 </a></p>
   <% else %>
 
