@@ -19,6 +19,6 @@ class RatingsController < ApplicationController
   def destroy
     @rating = Rating.find params[:id]
     @rating.destroy
-    redirect_to products_path(params[:product_id]), notice: 'Review deleted'
+    redirect_to products_path(params[:product_id]), notice: 'Review Deleted'
   end
 end
