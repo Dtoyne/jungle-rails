@@ -7,21 +7,16 @@ class UsersController < ApplicationController
     user = User.new(user_params)
     if user.save
       session[:user_id] = user.id
-      redirect_to '/'
+      redirect_to root_path
     else
-      redirect_to '/signup'
+      redirect_to register_path, notice: user.errors.full_messages.first
+    end
   end
-end
 
-private
+  private
 
   def user_params
-    params.require(:user).permit(
-                   :first_name,
-                   :last_name,
-                   :email,
-                   :password,
-                   :password_confirmation)
-    end
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
+  end
 
 end

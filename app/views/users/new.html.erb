@@ -3,28 +3,23 @@
   <div id="legend">
     <legend class="">Sign up</legend>
   </div>
-  <!-- User first name -->
   <div class="control-group">
     <label class="control-label" for="user_first_name">First name:</label>
     <div class="controls">
       <%= f.text_field :first_name, class: "input-xlarge", autofocus: true %>
     </div>
   </div>
-  <!-- User last name -->
   <div class="control-group">
     <label class="control-label" for="user_last_name">Last name:</label>
     <div class="controls">
       <%= f.text_field :last_name, class: "input-xlarge" %>
     </div>
-  </div>
-  <!-- User email -->
   <div class="control-group">
     <label class="control-label" for="user_email">Email:</label>
     <div class="controls">
       <%= f.text_field :email, class: "input-xlarge" %>
     </div>
   </div>
-  <!-- User password -->
   <div class="control-group">
     <label class="control-label" for="user_password">Password:</label>
     <div class="controls">
@@ -32,13 +27,11 @@
     </div>
   </div>
   <div class="control-group">
-  <!-- User password confirmation -->
     <label class="control-label" for="user_password_confirmation">Confirm Password:</label>
     <div class="controls">
       <%= f.password_field :password_confirmation, class: "input-xlarge" %>
     </div>
   </div>
-  <!-- Submit button -->
   <div class="control-group">
     <div class="controls">
       <%= f.submit 'Submit', class: "btn btn-success" %>
